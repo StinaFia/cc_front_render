@@ -33,8 +33,8 @@ function App() {
     setMessage('')
 
     try {
-      // Replace this URL with your deployed Flask backend
-      const response = await fetch('http://192.168.62.140:8080/sentiment', {
+      // Connect to Racti hosted backend
+      const response = await fetch('https://cc-2025-backend-third-cloud-computing-2025-stina.2.rahtiapp.fi/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
